@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+.container {
+    text-align: left;
+    width: 320px;
+}
+img {
+    width: 300px;
+    margin: 10px 0 0 0;
+}
+button {
+    padding: 6px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(190, 61, 132);
+}
