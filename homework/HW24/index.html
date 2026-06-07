@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Перевод кошачьего возраста в человеческий</h2>
+
+    <label>Возраст кошки (лет):</label>
+    <input type="number" id="catAge" step="0.5" min="0">
+
+    <label>Способ расчёта:</label>
+    <select id="method">
+        <option value="simple">Простой (x7)</option>
+        <option value="classic">Классический (15+9+4)</option>
+    </select>
+
+    <label>Пол кошки:</label>
+    <select id="gender">
+        <option value="0">Девочка</option>
+        <option value="1">Мальчик</option>
+    </select>
+
+    <button id="calcBtn">Рассчитать</button>
+
+    <div class="result">
+        <span id="humanAge"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
