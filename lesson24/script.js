@@ -81,6 +81,72 @@ countries.addEventListener("change", function () {
     /*  let option = new Option("Текст", "value", true, true);
     console.log(option); */
 
-    let btnAdd = document.querySelector("#btnAdd");
-    let btnRemove = document.querySelector("#btnRemove");
+    // let btnAdd = document.querySelector("#btnAdd");
+// let btnRemove = document.querySelector("#btnRemove");
+// let taskInput = document.querySelector("#task");
+// let taskList = document.querySelector("#taskList");
+
+// btnAdd.addEventListener("click", e => {
+//     e.preventDefault();
+
+//     if (taskInput.value.trim() === "") {
+//         alert("Введите название задачи");
+//         return;
+//     }
+
+//     let option = new Option(taskInput.value, taskInput.value);
+//     taskList.add(option, undefined);
+//     taskInput.value = '';
+//     taskList.focus();
+// })
+
+// btnRemove.addEventListener("click", e => {
+//     e.preventDefault();
+
+//     let selectedTasks = [];
+
+//     for (let i = 0; i < taskList.options.length; i++) {
+//         selectedTasks[i] = taskList.options[i].selected;
+//     }
+
+//     let index = taskList.options.length;
+//     while(index--){
+//         if(selectedTasks[index]){
+//             taskList.remove(index);
+//         }
+//     }
+// })
+
+
+// let input = document.querySelector("input");
+// input.addEventListener("change", function(){
+//     if(input.files.length > 0){
+//         let file = input.files[0];
+//         console.log("Вы выбрали:", file.name);
+//         if(file.type){
+//             console.log("У него тип:", file.type);            
+//         }
+//     }
+// })
+
+
+
+/* let gas = document.querySelector(".gallon");
+
+console.log(gas.blur());
+
+let petrol = document.querySelectorAll(".petrol");
+let res;
+
+for(let i=0; i < petrol.length; i++){
+    petrol[i].addEventListener("click", function(){
+        let gallons = gas.value;
+        let amount = this.getAttribute("data-pet");
+        
+        res = gallons * amount;
+        let sum = document.querySelector(".sum");
+        sum.innerHTML = res;        
+    })
+} */
+
     
