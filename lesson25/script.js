@@ -172,11 +172,3 @@ document .writeln(str.match(regexp) + "<br>");
 
 
 
-let st = "Это пример строки    несколько проблемами";
-let reg = "шаблон";
-
-let result = ...;
-console.log(result); // Это_пример_строки_с_нескольким_пробелами
-
-
-
