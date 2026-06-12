@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="currentPlayer">
             <span>Сейчас ходит: <span id="curPlayer">X</span></span>
         </div>
@@ -37,7 +37,56 @@
                 </tr>
             </table>
         </div>
-    </div>
+    </div> -->
+
+
+
+
+    <h2>User Registration</h2>
+    <form id="registrationForm">
+        <div>
+            <label>Username:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+    <script>
+        let emailField = document.getElementById('email');
+        
+        function isValidEmail(email) {
+            return /^[\w.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email);
+        }
+        
+        emailField.oninput = function() {
+            let email = emailField.value;
+            
+            if (email !== "" && !isValidEmail(email)) {
+                emailField.classList.add('red');
+                emailField.style.border = "2px solid red";
+            } else {
+                emailField.classList.remove('red');
+                emailField.style.border = "2px solid black";
+            }
+        }
+        
+        let form = document.getElementById('registrationForm');
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            alert("Форма отправлена");
+        }
+    </script>
+
 
     <script src="script.js"></script>
 </body>

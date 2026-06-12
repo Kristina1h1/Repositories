@@ -1,4 +1,4 @@
-/* let registrationForm = document.getElementById("registrationForm");
+let registrationForm = document.getElementById("registrationForm");
 let errorMessages = document.getElementById("errorMessages");
 
 registrationForm.addEventListener("submit", function (event) {
@@ -30,7 +30,7 @@ function isValidEmail(email) {
 
 function isStrongPassword(password){
     return /\^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/.test(password);
-} */
+}
 
 
 
@@ -38,11 +38,11 @@ function isStrongPassword(password){
 car["type"] = "BMW";
 car["color"] = "white";
 console.log(car);
-document.writeIn(car["type"]+ " " + car["color"]); // [object Object] */
+document.writeIn(car["type"]+ " " + car["color"]); // [object Object]
 
 
 
-let menu1 = {};
+/* let menu1 = {};
 menu1.width = 300;
 menu1.height = 300;
 menu1.title = "Menu";
@@ -69,7 +69,7 @@ let counter = 0;
 for (let key in menu) {
     document.writeln("<br>Ключ = " + key + ", значение = " + menu[key]);
     counter++;
-}
+} */
 
 // document.writeln("<br><br>Всероссийский счетчик: " + counter + "<br>");
 
