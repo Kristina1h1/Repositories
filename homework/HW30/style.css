@@ -1,10 +1,10 @@
 .error {
-            border: 2px solid red;
-            outline: none;
-        }
-        
-        input {
-            border: 2px solid #ccc;
-            padding: 5px;
-            margin: 5px 0;
-        }
+    border: 2px solid red;
+    outline: none;
+}
+
+input {
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+}
