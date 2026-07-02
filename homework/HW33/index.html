@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button id="btn">Получить консультацию</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вы получите подробную консультацию</h2>
+
+            <form id="consultationForm">
+                <div class="form-group">
+                    <label>Имя <span>*</span></label>
+                    <input type="text" id="name" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Электронная почта <span>*</span></label>
+                    <input type="email" id="email" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Ваш вопрос</label>
+                    <textarea id="question" placeholder="Опишите ваш вопрос"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить заявку!</button>
+            </form>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
