@@ -1,0 +1,16 @@
+:root {
+  --main-color: #5C4033;
+}
+
+.footer {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
