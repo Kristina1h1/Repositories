@@ -1,0 +1,14 @@
+function Task(props) {
+    let { task,doneTask,deleteTask,index } = props;
+    return (
+        <div className="task" style={{textDecoration: task.done ? 'line-through' : ''}}>
+            {task.text}
+            <div>
+                <button onClick={() => doneTask(index)}>{task.done ? 'Вернуть'  : 'Done'}</button>
+                <button onClick={() => deleteTask(index)}>X</button>
+            </div>
+        </div>
+    )
+}
+
+export default Task
