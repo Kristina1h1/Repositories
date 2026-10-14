@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from "../components/MovieList";
 import Preloader from "../components/Preloader";
 import Search from "../components/Search";
+import AutoHide from "../components/AutoHide";
 import './Main.css';
 
 class Main extends React.Component {
@@ -34,6 +35,7 @@ class Main extends React.Component {
             <div className="main">
                 <div className="wrap">
                     <Search serchMovie={this.serchMovie} totalCount={count} />
+                    <AutoHide />
                     {
                         loading ? <Preloader /> : <MovieList movies={movies} />
                     }
